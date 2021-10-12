@@ -1,0 +1,1296 @@
+﻿@font-face {
+	font-family: 'BKoodakBold';
+	src: url(../fonts/BKoodakBold.eot?#) format("eot"),url(../fonts/BKoodakBold.ttf) format("truetype");
+}
+@font-face {
+	font-family:'BYekan';src:url(../fonts/BYekan.eot?#) format("eot"),url(../fonts/BYekan.woff) format("woff"),url(../fonts/BYekan.ttf) format("truetype");
+}
+body {
+	/* background: url(https://paystar.ir/homepage/image/reg.png); */
+	background-color:whitesmoke;
+	font-family: tahoma;
+	font-size: 100%;
+	direction: rtl;
+	height: 100vh;
+}
+h2,h1 {
+	font-family: "BYekan",tahoma;
+	line-height: 20px;
+	margin: 10px;
+	color: #ECFDFD;
+}
+h2 {
+	font-size: 20px;
+}
+h1 {
+	font-size: 17px;
+}
+p {
+	font-size: 17px;
+	font-family: "BYekan",tahoma;
+	line-height: 20px;
+	margin: 0;
+	color: #ECFDFD;
+}
+label {
+	color: #ECFDFD;
+	font-family: BYekan,Tahoma;
+	font-size: 16px;
+}
+legend {
+	padding: 10px 20px;
+	color: #5B5C5C;
+	font-family: BKoodakBold,Tahoma;
+	font-size: 130%;
+}
+strong {
+	margin-right: 30px;
+	float: right;
+}
+fieldset {
+	border: 0 none;
+	padding: 5px;
+}
+div.form {
+	padding: 10px 20px;
+	direction: rtl;
+}
+.clear {
+	clear: both;
+}
+div.container {
+	width: 810px;
+	height: auto;
+	margin: 111px auto 20px;
+	background-color: rgba(255,255,255,0.20);
+	border: 1px solid #8CBBC0;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	border-radius: 30px;
+	display: none;
+	position: relative;
+	min-height: 350px;
+}
+.operators {
+	width: 808px;
+	height: 100px;
+	margin-top: 0;
+	z-index: 9999;
+}
+.operators:first-child {
+	margin-right: 60px;
+}
+.operators div {
+	width: 152px;
+	height: 102px;
+	float: right;
+	cursor: pointer;
+	margin-top: inherit;
+}
+.operator.MTN {
+	background: url(../img/mobile-operators.png) no-repeat -456px -109px;
+}
+.operator.MTN.active {
+	background-position: -456px 0;
+}
+.operator.MTN:hover {
+	background-position: -456px 0;
+}
+.operator.MCI {
+	background: url(../img/mobile-operators.png) no-repeat -304px -109px;
+}
+.operator.MCI.active {
+	background-position: -304px 0;
+}
+.operator.MCI:hover {
+	background-position: -304px 0;
+}
+.operator.RTL {
+	background: url(../img/mobile-operators.png) no-repeat -152px -109px;
+}
+.operator.RTL.active {
+	background-position: -152px 0;
+}
+
+.operator.RTL:hover {
+	background-position: -152px 0;
+}
+div#left {
+	bottom: 90px;
+	direction: rtl;
+	float: left;
+	left: 0;
+	position: absolute;
+	width: 326px;
+}
+.InternetPackage #left{
+    bottom: 200px !important;
+}
+div#content {
+	height: auto;
+	margin: 20px 0;
+	text-align: center;
+	width: 482px;
+}
+div.container.Bill div#content {
+	margin-top: 50px;
+}
+div#content input,div#content select {
+	background-color: #3e7aac;
+	border: 2px solid #365c80;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px 5px #386386 inset;
+	color: #fff;
+	font-family: BKoodakBold,Tahoma;
+	font-size: 200%;
+	height: 34px;
+	margin: 8px;
+	padding: 8px 50px 2px;
+	text-align: center;
+	width: 230px;
+}
+div#content select {
+	width: 334px;
+	height: 48px;
+	text-align: right;
+	padding: 5px 25px;
+	font-size: 16px;
+}
+div#content input[type="text"] {
+	line-height: 36px;
+}
+#EmailInput {
+	letter-spacing: 1px!important;
+	padding: 8px 20px 2px 50px !important;
+	width: 260px!important;
+}
+div#content input:hover {
+	color: #1D384F;
+}
+div#content input:focus {
+	color: #1D384F;
+}
+input#dataAccountTemp,input#cellphone {
+	background: url(../img/mobile.png) no-repeat #3e7aac;
+	background-position: 13px 14px;
+	text-align: left!important;
+	direction: ltr;
+}
+input#cellphone {
+	text-align: center!important;
+	letter-spacing: 0!important;
+}
+input#dataAccountTemp:hover,input#cellphone:hover,input#dataAccountTemp:focus,input#cellphone:focus {
+	background-image: url(../img/mobile-h.png);
+}
+div#content select#dataAmountTemp {
+	direction: ltr;
+	width: 339px;
+	height: 48px;
+	border: 1px solid #D6D4D5;
+	color: #5C5C5C;
+	border-radius: 10px;
+	padding: 5px 20px 5px 60px;
+	margin: 8px;
+	box-shadow: rgba(0,0,0,0.298039) 0 0 5px 0 inset;
+	background-image: url(../img/price.png);
+	background-repeat: no-repeat;
+	background-color: #F6F4F5;
+	background-position: 13px 14px;
+	font-family: BYekan,Tahoma;
+	font-size: 160%;
+	text-align: center;
+}
+div#content select#dataAmountTemp:hover {
+	background-image: url(../img/price-h.png);
+}
+input#EmailInput,input#email {
+	background: url(../img/email.png) no-repeat #3e7aac;
+	background-position: 13px 14px;
+	font-size: 140%!important;
+}
+input#EmailInput:hover,input#email:hover,input#EmailInput:focus,input#email:focus {
+	background-image: url(../img/email-h.png);
+}
+div#content input[type="submit"],div#content input[type="button"] {
+	width: 342px;
+	height: 56px;
+	box-shadow: inset 0 20px 15px 0 #1b4987;
+	border: 1px solid #1b4e7b;
+	border-radius: 10px;
+	padding: 0 45px;
+	margin: 5px;
+	background-color: #153462;
+	font-family: BKoodakBold,Tahoma;
+	font-size: 180%;
+	color: #fff;
+}
+div#content input[type="submit"]:hover,div#content input[type="button"]:hover {
+	box-shadow: inset 0 13px 10px 0 #1b4e7b;
+	background-color: #1b4987;
+	text-shadow: 1px 2px 2px #111;
+}
+div#content div#MagicCharge {
+	box-shadow: 0 0 0 #000;
+	border-radius: 6px;
+	margin: 10px 25px;
+	text-align: right;
+	color: #5B5C5C;
+	font-family: BKoodakBold,Tahoma;
+	font-size: 100%;
+	height: auto;
+}
+div#content input#magiccharge, div#content input#NonCreditMTN {
+	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	padding: 10px;
+	box-shadow: none;
+}
+.error-message,.message {
+	background-color: #F2DEDE;
+	border: 1px solid #EED3D7;
+	color: #B94A48;
+	border-radius: 4px;
+	margin: 10px 0;
+	padding: 4px;
+	font-family: BYekan,tahoma;
+	font-size: 13px;
+	text-align: center;
+}
+.banksubmits {
+	margin: 20px auto;
+	width: 250px;
+	font-family: "BYekan",tahoma;
+	font-size: 13px;
+	text-align: center;
+}
+.banksubmits input {
+	background-image: url(../img/load.gif);
+	background-repeat: no-repeat;
+	background-position: 270px 15px;
+	direction: rtl;
+	text-align: right!important;
+	width: 300px!important;
+}
+.input.account,.input.email,.input.billId,.input.paymentId,.input.giftcard-types,.input.trafficcard-types,.input.antivirus-types {
+	width: 385px;
+}
+.alert {
+	direction: rtl;
+	margin: 20px 10px;
+	padding: 8px;
+	border-radius: 10px;
+	font-family: "BYekan",tahoma;
+	border: 1px solid #E6E6E4;
+}
+.menu {
+	float: left;
+	margin: -50px 0 0 30px;
+	position: relative;
+}
+.menu span {
+	font-family: Tahoma,Geneva,sans-serif;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 4px 30px 9px 16px;
+	margin-right: 20px;
+	background-color: #87B43F;
+	display: inline-block;
+	width: auto;
+	color: #FFF;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-khtml-border-radius: 0 0 10px 10px;
+}
+.menu span a {
+	color: #fff;
+	text-decoration: none;
+}
+span.support {
+	background: url(../img/support.png) no-repeat scroll 90% #87B43F;
+}
+span.help {
+	background: url(../img/help.png) no-repeat scroll 90% #098A97;
+}
+span.help:hover {
+	background-color: #47B7C0;
+}
+.qtip {
+	border-width: 3px;
+}
+.qtip-content {
+	font-family: "BYekan",tahoma;
+	font-size: 13px;
+	line-height: 2;
+	direction: rtl;
+	text-align: justify!important;
+}
+.qtip-content p {
+	font-size: 13px;
+	color: #3f6219;
+	line-height: 20px!important;
+}
+.qtip-content p img {
+	margin-bottom: -5px;
+}
+.bank-qtip {
+	border-width: 1px!important;
+}
+.bank-qtip .qtip-content {
+	font-size: 11px!important;
+	color: #fff;
+	text-align: center!important;
+	padding: 0 5px;
+}
+.bgs {
+	margin-top: -61px;
+}
+div.addScript {
+	position: relative;
+	left: 91%;
+	top: 1px;
+}
+.addScript {
+	margin: 0;
+	width: 0;
+}
+
+.addScript p {
+	margin: 0;
+	width: 0;
+}
+.addScript p>a>img {
+	width: 0;
+	height: 0;
+}
+.addScript a>img {
+	margin-top: 3px;
+}
+div #desc h1,div #desc p {
+	font-size: 13px;
+	font-weight: 400;
+	font-family: "BYekan",tahoma;
+	line-height: 20px;
+	margin: 5px 2px 5px 22px;
+	color: rgba(0, 0, 0, 0.589);
+	text-align: center;
+	text-shadow: 0 1px 1px #303E58;
+}
+div #desc h1 {
+	font-size: 16px;
+}
+form label.alert {
+	display: block;
+	padding: 20px;
+	border: none;
+}
+div .loading {
+	display: none;
+}
+div.input {
+	padding: 0 45px;
+}
+div.payment-gateways {
+	text-align: right;
+	padding: 5px 60px;
+	display: inline-block;
+	width: 220px !important;
+}
+div.payment-gateways p {
+	text-align: right;
+	padding-bottom: 10px;
+}
+div.payment-gateways p i {
+	font-style: normal;
+	margin: 0 5px;
+}
+div.payment-gateways ul {
+	width: 335px !important;
+	margin: 0 auto;
+	padding: 0;
+}
+div.payment-gateways li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 2px solid #5586c7;
+	display: none;
+	margin: 0 4x;
+	background-color: #FFF;
+	background-image: url(../img/payment-gateways.png);
+	background-repeat: no-repeat;
+	font-family: Tahoma;
+	font-size: 0;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+div.payment-gateways li.active {
+	border: 2px solid #C44E06!important;
+}
+div.payment-gateways li.active i {
+	background-color: #FCE4A1;
+}
+div.payment-gateways li.bank-Parsian {
+	background-position: 0px -45px;
+}
+div.payment-gateways li.bank-Mellat {
+	background-position: -45px -45px;
+}
+div.payment-gateways li.bank-Saman {
+	background-position: -90px -45px;
+}
+div.payment-gateways li.bank-Melli {
+	background-position: -135px -45px;
+}
+div.payment-gateways li.bank-Fanava {
+	background-position: -180px -45px;
+}
+div.payment-gateways li.bank-Emtiyaz {
+	background-position: -270px -45px;
+}
+div.payment-gateways li.bank-Zarinpal {
+	background-position: -225px -45px;
+}
+div.payment-gateways li.active.bank-Parsian {
+	background-position: 0 0;
+}
+div.payment-gateways li.active.bank-Mellat {
+	background-position: -45px 0;
+}
+div.payment-gateways li.active.bank-Saman {
+	background-position: -90px 0;
+}
+div.payment-gateways li.active.bank-Melli {
+	background-position: -135px 0;
+}
+div.payment-gateways li.active.bank-Fanava {
+	background-position: -180px 0;
+}
+div.payment-gateways li.active.bank-Emtiyaz {
+	background-position: -270px 0;
+}
+div.payment-gateways li.active.bank-Zarinpal {
+	background-position: -225px 0;
+}
+div.Magiccharge, div.NonCreditMTN {
+	text-align: right;
+	padding: 0 60px 2px;
+	display:none;
+}
+.Magiccharge label,
+.NonCreditMTN label,
+.save-information label{
+	color:rgba(0, 0, 0, 0.589);
+}
+.caution{
+	color:rgba(0, 0, 0, 0.589);
+}
+#AmountTopUpMTNTemp {
+	display:none;
+}
+div.container.TopUp form.MTN #AmountTopUpMTNTemp, div.container.WiMax form.WiMax #AmountTopUpMTNTemp {
+	display:block!important;
+}
+div.container.TopUp form.MTN #AmountTemp, div.container.WiMax form.WiMax #AmountTemp {
+	display:none!important;
+}
+div.container.WiMax form.WiMax #AmountTopUpMTNTemp {
+	display:block!important;
+}
+div.container.WiMax form.WiMax #AmountTemp {
+	display:none!important;
+}
+div.container.TopUp form.MTN div.Magiccharge, div.container.TopUp form.MTN div.NonCreditMTN, div.container.TopUp form.RTL div.Magiccharge {
+	display:block!important;
+}
+div.container.PIN div.Magiccharge, div.container.WiMax div.Magiccharge, div.container.PIN div.NonCreditMTN, div.container.WiMax div.NonCreditMTN {
+	display:none;
+}
+.amount {
+	float: right;
+	padding: 14px 70px 4px!important;
+	width: 335px;
+}
+form div.submit input {
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+}
+form.MTN div.submit input {
+	background-color: #FFBD00;
+	border: 1px solid #F5B51F;
+}
+form.MCI div.submit input {
+	background-color: #3BB3C4;
+	border: 1px solid #50D2E4;
+}
+.show {
+	display: block!important;
+}
+.hide {
+	display: none!important;
+}
+div.container.TopUp div.counter,div.container.WiMax div.counter {
+	display: none!important;
+}
+div.container.PIN div.counter {
+	display: block!important;
+}
+div.container div.charge,div.container div.Bill {
+	display: none;
+}
+div.container.TopUp div.charge,div.container.PIN div.charge,div.container.WiMax div.charge{
+	display: block!important;
+}
+div.container.Bill div.Bill {
+	display: block!important;
+}
+div.operators.WiMax div.MCI,div.operators.WiMax div.RTL {
+	display: none;
+}
+div.operators.Bill > div,div.operators.TrafficCard > div,div.operators.GiftCard > div,div.operators.Antivirus > div {
+	display: none;
+}
+div.operators.GiftCard > div.MTN,div.operators.GiftCard > div.MCI,div.operators.GiftCard > div.RTL{
+	display: none;
+}
+.irs {
+	font-family: 'BYekan',tahoma;
+}
+.irs-max { 
+display: block!important;
+}
+.irs-from,.irs-to,.irs-single {
+	font-size: 12px!important;
+	top: -4px!important;
+	left: 16px;
+}
+.irs-min,.irs-max {
+	color: #FFF!important;
+}
+table {
+	font-size: 13px;
+	font-family: BYekan,tahoma;
+	line-height: 20px;
+	margin: 50px auto;
+	color: #717172;
+	text-align: left:;
+}
+td {
+	padding: 5px 15px;
+	border: 1px solid #DDD;
+}
+table > tbody > tr:nth-child(2n) > td,table > tbody > tr:nth-child(2n) > th {
+	background-color: #F2F2F2;
+}
+img.success {
+	width: 220px;
+	height: 230px;
+	margin: 60px 40px 0 0;
+}
+a.mainpage {
+	width: 342px;
+	height: 56px;
+	box-shadow: inset 0 20px 15px 0 #1b4987;
+	border: 1px solid #1b4e7b;
+	border-radius: 10px;
+	margin-top: 20px;
+	background-color: #153462;
+	font-family: BKoodakBold,Tahoma;
+	font-size: 180%;
+	color: #fff;
+	padding: 1px 45px;
+	text-decoration: none;
+}
+a.mainpage:hover {
+	box-shadow: inset 0 13px 10px 0 #1b4e7b;
+	background-color: #1b4987;
+	text-shadow: 1px 2px 2px #111;
+}
+.failed a.mainpage {
+	margin-right: 220px;
+}
+div #description h1,div #description p {
+	font-size: 13px;
+	font-weight: 400;
+	font-family: "BYekan",tahoma;
+	line-height: 20px;
+	margin: 5px 10px 5px 40px;
+	color: #717172;
+	text-align: center;
+	text-shadow: 0 2px 1px #BBBABA;
+	width: 250px;
+}
+div #description h1 {
+	font-size: 16px;
+}
+div.failed {
+	margin: 80px 40px;
+}
+div.failed .logo {
+	width: 128px;
+	height: 128px;
+	background: url(../img/warning.png) no-repeat 0 0;
+	float: right;
+}
+div.failed .explanation {
+	float: right;
+	margin: 45px 2px;
+}
+div.failed .explanation p {
+	font-size: 13px;
+	margin: 10px;
+}
+p.caution {
+	font-size: 10px;
+	background: url(../img/caution-small.png) no-repeat scroll right 2px rgba(0,0,0,0);
+	padding: 0 18px!important;
+}
+div.container.Bill div.payment-gateways,div.container.Bill div.submit,div.container.GiftCard div.payment-gateways,div.container.GiftCard div.submit,div.container.Antivirus div.payment-gateways,div.container.Antivirus div.submit,div.container.InternetPackage div.payment-gateways,div.container.InternetPackage div.submit {
+	display: none;
+}
+div.billId input,div.paymentId input {
+	letter-spacing: 0!important;
+}
+div.container.Bill div.verify {
+	display: none;
+}
+table#bill-info {
+	margin: 0 auto 5px!important;
+}
+table#bill-info td span {
+	margin: 2px;
+}
+table#bill-info td span#type-title {
+	margin: 0;
+	height: 15px;
+	line-height: 18px;
+	display: block;
+}
+table#bill-info td span.bill {
+	width: 48px;
+	height: 48px;
+	display: block;
+	margin: 0 auto;
+}
+table#bill-info td span.bill.water {
+	background: url("../img/bill-operators.png") no-repeat  -1px  0;
+}
+table#bill-info td span.bill.electricity {
+	background: url("../img/bill-operators.png") no-repeat -55px 0;
+}
+table#bill-info td span.bill.gas {
+	background: url("../img/bill-operators.png") no-repeat -115px 0;
+}
+table#bill-info td span.bill.telephone {
+	background: url("../img/bill-operators.png") no-repeat -170px 2px;
+}
+table#bill-info td span.bill.cellphone {
+	background: url("../img/bill-operators.png") no-repeat -220px 0;
+}
+table#bill-info td span.bill.mayoralty {
+	background: url("../img/bill-operators.png") -280px 0;
+}
+table#bill-info td span.bill.police {
+	background: url("../img/bill-operators.png") no-repeat -330px 0;
+}
+table#bill-info td span.bill.pasargad {
+	background: url("../img/bill-operators.png") no-repeat -375px 0;
+}
+.container.GiftCard > .GiftCard.operators,.TrafficCard.operators,.Bill.operators,.Antivirus.operators {
+	height: 0;
+}
+.container .GiftCard {
+	display: none;
+}
+.container.TopUp .GiftCard,.container.PIN .GiftCard,.container.WiMax .GiftCard,.container.Bill .GiftCard,.container.Antivirus .GiftCard,.container.TrafficCard .GiftCard {
+	display: none;
+}
+.container.TopUp .InternetPackage, .container.PIN .InternetPackage, .container.WiMax .InternetPackage, .container.Bill .InternetPackage, .container.Antivirus .InternetPackage, .container.GiftCard .InternetPackage{
+	display:none;
+}
+.container.InternetPackage .TopUp , .container.InternetPackage .PIN , .container.InternetPackage .WiMax , .container.InternetPackage .Bill , .container.InternetPackage .Antivirus , .container.InternetPackage .GiftCard {
+	display:none;
+}
+.container.GiftCard .GiftCard {
+	display: block;
+}
+.container.GiftCard .info {
+	padding: 0 40px;
+	font-family: BYekan,Tahoma;
+	font-size: 13px;
+	color: #292A2D;
+}
+.container.GiftCard .info div {
+	float: right;
+	display: inline-block;
+}
+.container.GiftCard .info .title {
+	font-size: 17px;
+	margin-top: 10px;
+}
+.container.GiftCard .info .description {
+	width: 245px;
+	text-align: right;
+}
+.container.GiftCard .info .operator.GiftCard {
+	width: 120px;
+	height: 67px;
+	background-size: 200% 400%!important;
+	cursor: default;
+}
+.container.GiftCard .GiftCard .buy {
+	display: none;
+}
+.GiftCard .operators {
+	width: 380px;
+	margin: 0 auto;
+}
+.GiftCard.operator {
+	width: 180px;
+	height: 100px;
+	margin: 5px;
+	cursor: pointer;
+}
+.GiftCard .operators .operator:hover {
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.operator.GooglePlay {
+	background: url(../img/gift-cards.png) no-repeat -180px 0;
+}
+.operator.Microsoft {
+	background: url(../img/gift-cards.png) no-repeat 0 0;
+}
+.operator.iTunes {
+	background: url(../img/gift-cards.png) no-repeat -180px -100px;
+}
+.operator.Amazon {
+	background: url(../img/gift-cards.png) no-repeat 0 -100px;
+}
+.operator.XBox {
+	background: url(../img/gift-cards.png) no-repeat -180px -200px;
+}
+.operator.PlayStation {
+	background: url(../img/gift-cards.png) no-repeat 0 -200px;
+}
+.operator.PlayStationPlus {
+	background: url(../img/gift-cards.png) no-repeat -180px -300px;
+}
+.container.GiftCard .info .GiftCard.operator.GooglePlay {
+	background: url(../img/gift-cards.png) no-repeat -120px 0;
+}
+.container.GiftCard .info .GiftCard.operator.Microsoft {
+	background: url(../img/gift-cards.png) no-repeat 0 0;
+}
+.container.GiftCard .info .GiftCard.operator.iTunes {
+	background: url(../img/gift-cards.png) no-repeat -120px -67px;
+}
+.container.GiftCard .info .GiftCard.operator.Amazon {
+	background: url(../img/gift-cards.png) no-repeat 0 -67px;
+}
+.container.GiftCard .info .GiftCard.operator.XBox {
+	background: url(../img/gift-cards.png) no-repeat -120px -134px;
+}
+.container.GiftCard .info .GiftCard.operator.PlayStation {
+	background: url(../img/gift-cards.png) no-repeat 0 -134px;
+}
+.container.GiftCard .info .GiftCard.operator.PlayStationPlus {
+	background: url(../img/gift-cards.png) no-repeat -120px -200px;
+}
+.back-button {
+	background-color: #fac382;
+	border: 1px solid #f7941d;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	padding: 0 3px;
+	position: absolute;
+	float: right;
+	display: inline-block;
+}
+.container.TopUp .TrafficCard,.container.PIN .TrafficCard,.container.WiMax .TrafficCard,.container.Bill .TrafficCard,.container.Antivirus .TrafficCard,.container.GiftCard .TrafficCard {
+	display: none;
+}
+.container.TrafficCard .TrafficCard {
+	display: block;
+}
+.container.TrafficCard .TrafficCard .caution.description {
+	font-size: 13px;
+	margin: 0 30px;
+	text-align: right;
+	padding-left: 0!important;
+}
+.container.TrafficCard #logo-container,.container.GiftCard #logo-container,.container.Antivirus #logo-container {
+	margin-top: 140px;
+}
+.amount-container {
+	background-color: #97c1e8;
+	border: 1px solid #77a1c8;
+	border-radius: 8px;
+	color: #fff;
+	float: right;
+	font-family: BYekan;
+	margin: 10px 25px;
+	padding: 0!important;
+}
+.count {
+	float: right;
+	padding: 14px 25px 4px 13px !important;
+	width: 150px;
+}
+.amount-container span {
+	display: block;
+	float: right;
+}
+.amount-container .amount-title {
+	background-color: #77a1c8;
+	border-radius: 0 6px 6px 0;
+	padding: 5px 8px;
+}
+.amount-container .amount-value {
+	display: inline-block;
+	width: 63px;
+	padding: 2px 5px;
+	text-align: left;
+	font-weight: 700;
+	font-size: 17px!important;
+}
+.amount-container .amount-unit {
+	font-size: 13px;
+	line-height: 24px;
+	padding: 4px 0 0 6px;
+}
+.container.TopUp .Antivirus,.container.PIN .Antivirus,.container.WiMax .Antivirus,.container.Bill .Antivirus,.container.GiftCard .Antivirus,.container.TrafficCard .Antivirus {
+	display: none;
+}
+.service-caution {
+	background: url(../img/caution.png) no-repeat scroll center 4px rgba(0,0,0,0);
+	font-size: 19px;
+	line-height: 30px;
+	margin: 140px 50px;
+	padding-top: 140px;
+	width: 300px;
+}
+.container.Antivirus .Antivirus {
+	display: block;
+}
+.container.Antivirus .info {
+	padding: 0 40px;
+	font-family: BYekan,Tahoma;
+	font-size: 13px;
+	color: #292A2D;
+}
+.container.Antivirus .info div {
+	float: right;
+	display: inline-block;
+}
+.container.Antivirus .info .title {
+	font-size: 17px;
+	margin-top: 10px;
+}
+.container.Antivirus .info .description {
+	width: 245px;
+	text-align: right;
+}
+.container.Antivirus .info .operator.Antivirus {
+	background-size: 100% 400%!important;
+	cursor: default;
+	height: 55px;
+	width: 120px;
+}
+.container.Antivirus .Antivirus .buy {
+	display: none;
+}
+.Antivirus .operators {
+	width: 380px;
+	margin: 0 auto;
+}
+.Antivirus.operator {
+	border: 1px solid #e0dedf;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 110px;
+	margin: 5px;
+	width: 300px;
+}
+.Antivirus .operators .operator:hover {
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.operator.Eset {
+	background: url(../img/antivirus.jpg) no-repeat 0 -1px;
+}
+.operator.BitDefender {
+	background: url(../img/antivirus.jpg) no-repeat 0 -111px;
+}
+.operator.Kaspersky {
+	background: url(../img/antivirus.jpg) no-repeat 0 -223px;
+}
+.operator.Norton {
+	background: url(../img/antivirus.jpg) no-repeat 0 -334px;
+}
+.container.Antivirus .info .Antivirus.operator.Eset {
+	background: url(../img/antivirus.jpg) no-repeat 0 -1px;
+}
+.container.Antivirus .info .Antivirus.operator.BitDefender {
+	background: url(../img/antivirus.jpg) no-repeat 0 -55px;
+}
+.container.Antivirus .info .Antivirus.operator.Kaspersky {
+	background: url(../img/antivirus.jpg) no-repeat 0 -110px;
+}
+.container.Antivirus .info .Antivirus.operator.Norton {
+	background: url(../img/antivirus.jpg) no-repeat 0 -165px;
+}
+.back-button {
+	background-color: #fac382;
+	border: 1px solid #f7941d;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	padding: 0 3px;
+	position: absolute;
+}
+div#payment-process {
+	display: none;
+}
+.cover {
+	background-color: #000;
+	color: #fff;	
+	left: 0;
+	opacity: .75;
+	position: fixed;
+	top: 0;
+	width: 100%;
+    height: 100%;
+	z-index: 1000;
+	display: none;
+}
+div.connecting {
+	background-color: #fff;
+	border: 2px solid #727272;
+	border-radius: 10px;
+	color: #222;
+	display: none;
+	font-family: BYekan,Tahoma;
+	height: 85px;
+	opacity: 1;
+	position: fixed;
+	width: 190px;
+	z-index: 14801;
+}
+.connecting > p {
+	background: url(../img/load.gif) no-repeat scroll right center rgba(0,0,0,0);
+	color: #797c80;
+	margin-right: 25px;
+	margin-top: 32px;
+	padding-right: 25px;
+}
+div.verify div.Bill {
+	display: block!important;
+}
+div.verify table#bill-info {
+	margin: 0 auto 35px!important;
+}
+table.no-style td {
+	background-color: unset!important;
+	border: none;
+	padding: 3px;
+}
+#content span {
+	font-family: 'BYekan',tahoma;
+	font-size: 13px;
+}
+div.verify div#left div#description p {
+	width: 280px!important;
+}
+div.container.verify {
+	padding: 30px 0;
+}
+div.verify table {
+	margin: 25px auto!important;
+}
+.ltr {
+	direction: ltr;
+}
+div.verify div#left {
+	bottom: 70px!important;
+}
+.notify {
+	display: none;
+	background: none repeat scroll 0 0 #e4223d;
+	border: 2px solid #fa2925;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.1);
+	color: #f6f4f5;
+	font-size: 14px;
+	height: 60px;
+	line-height: 20px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	width: 180px;
+	z-index: 2;
+}
+.notify:after {
+	border-color: #fa2925 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	content: "";
+	height: 0;
+	left: 90px;
+	position: absolute;
+	top: 82px;
+	width: 0;
+}
+.notify p {
+	color: #F6F4F5;
+}
+img.application {
+	margin: 40px;
+}
+.bgs.application .container {
+	display: block!important;
+}
+.bgs.application .container div#left {
+	bottom: 0!important;
+}
+.bgs.application #content {
+	text-align: right!important;
+	font-family: BYekan,tahoma;
+	font-size: 13px!important;
+	color: #ecfdfd;
+	text-align: justify!important;
+	margin: 30px 0!important;
+}
+.bgs.application #content ul {
+	margin: 0;
+}
+.bgs.application #content li {
+	margin-right: 30px;
+}
+.bgs.application #content div.submit input {
+	font-family: BYekan,Tahoma!important;
+	font-size: 26px!important;
+	margin: 20px 85px!important;
+	cursor: pointer;
+}
+a.application {
+	bottom: 0;
+	position: fixed;
+	right: 0;
+	height: 150px;
+}
+.qr {
+	background-color: #fff;
+	border-radius: 8px;
+	color: #1b4986;
+	margin: 0 40px 0 0;
+	opacity: .85;
+}
+.bgs.application #content .qr .description {
+	float: right;
+	margin: 12px;
+	width: 295px;
+}
+.qr .description > p {
+	color: #1b4986;
+	margin-bottom: 5px;
+}
+.bgs.application #content .qr .qrcode {
+	float: left;
+	height: 90px;
+	margin: 10px;
+	width: 90px;
+}
+.bgs.application #content .application-deactive {
+	background-color: #f2dede;
+	border: 1px solid #eed3d7;
+	border-radius: 8px;
+	color: #b94a48;
+	font-family: BYekan,tahoma;
+	font-size: 21px;
+	margin: 40px 40px 40px 0;
+	padding: 14px;
+	text-align: center;
+	display: none;
+}
+#logo > span {
+	color: #fff;
+	font-family: byekan;
+	font-size: 13px;
+	position: absolute;
+	right: 100px;
+	top: 100px;
+	cursor: default;
+}
+.application-logo {
+	height: 18px;
+	position: absolute;
+	right: 80px;
+	top: 102px;
+	width: 18px;
+}
+.warn{
+	background: url(../img/caution-small.png) no-repeat scroll right 2px rgba(0,0,0,0);
+	padding: 0 18px!important;
+    color: #fff;
+    font-size: 13px;
+    text-shadow: 0 1px 1px #303e58;
+    margin-right:15px;
+    text-align:justify;
+}
+div.save-information{
+    text-align: right;
+    padding: 0 60px 2px; 
+}
+div#content div#save-information{
+	box-shadow: 0px 0px 0px #000000;
+	border-radius:0px;
+	text-align:right;
+	color: #5B5C5C;
+	font-family: BKoodakBold,Tahoma;
+	font-size:100%;
+	height:auto;
+	margin: 8px auto;
+}
+div#content input#save-information{
+	border-radius:5px;
+    box-shadow:none;
+	width:10px;
+	height:10px;
+	padding:10px;
+}
+
+/* InternetPackage */
+    .container.InternetPackage .InternetPackage {
+        display:block;
+		width: 480px;
+    }
+    .container.InternetPackage .info .operator.InternetPackage {
+        width:120px;
+        height:67px;
+        background-size:200% 400%!important;
+        cursor:default;
+    }
+    .container.InternetPackage .InternetPackage .buy {
+        display:block;
+    }
+    .InternetPackage.operator {
+        width:180px;
+        height:100px;
+        margin:5px;
+        cursor:pointer;
+        float: right;
+        display: inline-block;
+    }
+    .InternetPackage .operators .operator:hover {
+       -webkit-transform: scale(1.1, 1.1);
+       -moz-transform: scale(1.1, 1.1);
+       -ms-transform: scale(1.1, 1.1);
+       -o-transform: scale(1.1, 1.1);
+       transform: scale(1.1, 1.1)
+    }
+     .operator.IN-MTN-Hourly {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -180px 0px;
+    }
+    .operator.IN-MTN-Daily {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll 0px 0px;
+    }
+    .operator.IN-MTN-Weekly {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -180px -100px;
+    }
+    .operator.IN-MTN-Monthly {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll 0px -100px;
+    }
+    .operator.IN-MTN-Amazing {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -180px -200px;
+    }
+    .operator.IN-MTN-TDLTE {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll 0px -200px;
+    }
+    .container.InternetPackage .info .InternetPackage.operator.IN-MTN-Hourly {
+         background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -120px 0px;
+    }
+    .container.InternetPackage .info .InternetPackage.operator.IN-MTN-Daily {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll 0px 0px;
+    }
+    .container.InternetPackage .info .InternetPackage.operator.IN-MTN-Weekly {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -120px -55px;
+    }
+    .container.InternetPackage .info .InternetPackage.operator.IN-MTN-Monthly {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll 0px -55px;
+    }
+    .container.InternetPackage .info .InternetPackage.operator.IN-MTN-Amazing {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll -120px -110px;
+    }
+    .container.InternetPackage .info .InternetPackage.operator.IN-MTN-TDLTE {
+        background: rgba(0, 0, 0, 0) url("../img/internet-package.png") no-repeat scroll 0px -110px;
+    }
+    .container.InternetPackage .amount-container {
+        width: 332px;
+    }
+    .container.InternetPackage .amount-title {
+        height: 25px;
+    }
+    .InternetPackage .operators {
+        /*margin: 0 auto;*/
+        width: 700px;
+    }
+    .operators.InternetPackage {
+        height: 10px;
+    }
+      .container.InternetPackage .info {
+        padding: 0 40px;
+        font-family: BYekan,Tahoma;
+        font-size: 13px;
+        color: #292A2D;
+    }
+    .container.InternetPackage .info .title {
+        font-size: 17px;
+        margin-top: 10px;
+        float: right;
+        display: inline-block;
+    }
+    .container.InternetPackage .info .description {
+        width: 245px;
+        text-align: right;
+        float: right;
+        display: inline-block;
+    }
+    .container.InternetPackage .info .operator.InternetPackage {
+        background-size: 200% 300%!important;
+        cursor: default;
+        height: 55px;
+        width: 120px;
+    }
+	.sim-type-container{
+		width: 300px;
+		display: inline-block;
+	}
+	.sim-type-container label{
+		float: right;
+		width: 150px;
+		text-align: right;
+	}
+/* End InternetPackage */
+
+input[type="radio"] {
+	width:auto !important;
+	height:auto !important;
+}
+.mx-200 {
+	max-width: 200px;
+}
