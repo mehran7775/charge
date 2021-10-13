@@ -2,6 +2,8 @@
 
 return [
 
+    'base_api_url' => 'http://core.paystar.ir/api',
+
     /*
     |--------------------------------------------------------------------------
     | Application Name

@@ -14,3 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','MainController@index');
+
+Route::post('/pardakht/create', 'MainController@pardakhtCreate');
+
+Route::post('/pardakht/create', 'MainController@pardakhtCreate');
+
+Route::post('/callback', 'MainController@callback')->name('callback');
