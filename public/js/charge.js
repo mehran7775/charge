@@ -165,7 +165,7 @@ jQuery(document).ready(function ($) {
 
 	// 		};
 	// 		console.log(form_data)
-			
+
 	// 		$.ajax(
 	// 			{
 	// 			type: 'POST',
@@ -234,7 +234,7 @@ jQuery(document).ready(function ($) {
 				Zarinak.open();
 				$('.connecting p').text('لطفاً صبر کنید ...');
 			} else {
-				
+
 			}
 		} else {
 			dialogue(data.errorMessage, "خطا");
