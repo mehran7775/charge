@@ -1,8 +1,8 @@
 <?php
 $config = [
     'title' => 'فروشگاه شارژ و خدمات پی استار ',
-    'description' => 'خرید شارژ تلفن همراه، شارژ مستقیم، کارت شارژ ، شارژ وایمکس ایرانسل، گیفت کارت، آنتی ویروس و پرداخت قبوض',
-    'keywords' => 'شارژ آسان تلفن همراه,شارژ موبایل,شارژ مستقیم,شارژ مستقیم,فروش شارژ,شارژ ایرانسل,شارژ همراه اول, رایتل,تالیا,کارت شارژ,شارژ مستقیم,خرید آنتی ویروس,خرید گیفت کارت,گیفت کارت آیتونز,گیفت کارت مایکروسافت,گیفت کارت گوگل پلی,گیفت کارت آمازون,گیفت کارت پلی استیشن,پرداخت قبوض',
+    'description' => 'خرید شارژ تلفن همراه',
+    'keywords' => 'شارژ آسان تلفن همراه,شارژ موبایل,شارژ مستقیم,شارژ مستقیم,فروش شارژ,شارژ ایرانسل,شارژ همراه اول',
     'webserviceID' => 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
 ];
 $slashPos = strrpos($_SERVER['SCRIPT_NAME'], '/');
@@ -10,6 +10,7 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="<?php echo $config['description']; ?>" />
@@ -23,6 +24,7 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
     <link rel="stylesheet" type="text/css" href="css/sweetalert2.css" />
     <link rel="stylesheet" type="text/css" href="css/help.css" />
     <title><?php echo $config['title']; ?></title>
+    <!-- Styles -->
     <style type="text/css">
         #modal_me {
             position: absolute;
@@ -74,6 +76,7 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
 
     </style>
 </head>
+
 <body>
     <div id="modal_me">
         <div class="modal_me">
@@ -91,14 +94,14 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
             <div id="content_modal">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Non velit et soluta consequatur cupiditate recusandae incidunt nisi iste maiores reprehenderit blanditiis
+                    Non velit et soluta consequatur cupiditate recusandae incidunt nisi iste maiores reprehenderit
+                    blanditiis
                     quae ducimus nam, magni modi. Natus dicta eligendi velit.
                 </p>
             </div>
         </div>
     </div>
-    <div class="notify">
-        <p class="description">جهت انتخاب خدمات روی آیکون های کوچک دور دایره کلیک نمایید.</p>
+    <div>
     </div>
     <div class="bgs">
         <div class="menu">
@@ -119,22 +122,21 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
                             <div class="input text required account">
                                 <input id="phoneNumber" value="09" type="text" maxlength="11" name="phone_number">
                             </div>
-
                         </div>
                         <div class="amount">
                             <select name="amount">
                                 <option value="1000">10000 ریال</option>
-                                <option value="2000">20000 ریال</option>
-                                <option value="5000">50000 ریال</option>
-                                <option value="10000">100000 ریال</option>
-                                <option value="20000">200000 ریال</option>
-                                <option value="50000">500000 ریال</option>
+                                <option value="20000">20000 ریال</option>
+                                <option value="50000">50000 ریال</option>
+                                <option value="100000">100000 ریال</option>
+                                <option value="200000">200000 ریال</option>
+                                <option value="500000">500000 ریال</option>
                             </select>
                         </div>
-                          <div class="save-information">
-                                    <input type="checkbox" value="1" id="save-information" name="data[save-information]">
-                                    <label for="save-information">ذخیره اطلاعات تماس </label>
-                                </div>
+                        <div class="save-information">
+                            <input type="checkbox" value="1" id="save-information" name="data[save-information]">
+                            <label for="save-information">ذخیره اطلاعات تماس </label>
+                        </div>
                         {{-- <div class="payment-gateways">
 							<p>درگاه پرداخت: <i></i></p>
 							<ul>
@@ -150,10 +152,17 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
 						</div> --}}
                     </fieldset>
                     <div>
-						@csrf
+                        @csrf
                         <input id="sendForm" value="پــرداخــت" type="submit">
                     </div>
                 </form>
+                <div class="errors" style="color:red;font-weight: bold;margin-top:10px;">
+                    @if ($errors)
+                        @foreach ($errors->all() as $error)
+                            <div>{{ $error }}</div><br>
+                        @endforeach
+                    @endif
+                </div>
             </div>
             <div class="clear"></div>
         </div>
@@ -170,35 +179,37 @@ $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0,
     <script type="text/javascript" src="js/sweetalert2.js"></script>
     <script type="text/javascript" src="js/charge.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="https://cdn.zarinpal.com/zarinak/v1/checkout.js"></script>
     <script type="text/javascript">
         var WebserviceID = <?php echo '"' . $config['webserviceID'] . '"'; ?>;
-		function show_modal(id){
-			var modal =document.getElementById("modal_me")
-			if(id=='abouts'){
-				var p='درباره ما';
-				var content='این محتویات درباره ما است'
-				const h=modal.querySelector(".title_modal h3");
-				h.innerHTML =p
-			}else{
-				var p='قوانین';
-				var content='این محتویات قوانین ما است';
-				const h=modal.querySelector(".title_modal h3");
-				h.innerHTML =p
-			}
 
-			modal.style.transition="all 0.3s";
-			modal.style.zIndex=999
-			modal.style.visibility="visible"
-			modal.style.opacity=1
+        function show_modal(id) {
+            var modal = document.getElementById("modal_me")
+            if (id == 'abouts') {
+                var p = 'درباره ما';
+                var content = 'این محتویات درباره ما است'
+                const h = modal.querySelector(".title_modal h3");
+                h.innerHTML = p
+            } else {
+                var p = 'قوانین';
+                var content = 'این محتویات قوانین ما است';
+                const h = modal.querySelector(".title_modal h3");
+                h.innerHTML = p
+            }
 
-		}
-		function close_modal(){
-			var modal =document.getElementById("modal_me")
-				modal.style.zIndex=-1
-			modal.style.visibility="hidden"
-			modal.style.opacity=0
-		}
+            modal.style.transition = "all 0.3s";
+            modal.style.zIndex = 999
+            modal.style.visibility = "visible"
+            modal.style.opacity = 1
+
+        }
+
+        function close_modal() {
+            var modal = document.getElementById("modal_me")
+            modal.style.zIndex = -1
+            modal.style.visibility = "hidden"
+            modal.style.opacity = 0
+        }
     </script>
 </body>
+
 </html>

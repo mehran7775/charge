@@ -17,4 +17,4 @@ Route::get('/','MainController@index');
 
 Route::post('/payment/create', 'PaymentController@paymentRequest');
 Route::post('/callback', 'PaymentController@callback')->name('callback');
-Route::post('/payment/verify', 'PaymentController@paymentVerify');
+// Route::post('/payment/verify', 'PaymentController@paymentVerify');

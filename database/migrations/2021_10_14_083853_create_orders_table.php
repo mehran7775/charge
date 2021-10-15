@@ -18,9 +18,8 @@ class CreateOrdersTable extends Migration
             $table->string('phone_number');
             $table->string('amount');
             $table->string('ref_num')->nullable();
-            $table->tinyInteger('status')->default(1);
+            $table->tinyInteger('status');
             $table->timestamps();
-
         });
     }
 
