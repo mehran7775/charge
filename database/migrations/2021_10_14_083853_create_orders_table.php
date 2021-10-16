@@ -16,6 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('phone_number');
+            $table->string('operator');
             $table->string('amount');
             $table->string('ref_num')->nullable();
             $table->tinyInteger('status');
@@ -24,7 +25,7 @@ class CreateOrdersTable extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migrations.  
      *
      * @return void
      */

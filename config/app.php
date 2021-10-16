@@ -6,6 +6,14 @@ return [
     'getway_id' => 'gk3y5y561d0w3y',
     'callback_url'=>'http://localhost:8000/callback',
     'key_sign' =>'14A9429F715E12D3B5BE98A5F94065ED11B26E87645B093D0067E75D7495F8440E580DA9142C5CDF3F23A8F91C5BB95B080E02679689B21B62DC1028A341D5C2554C11B780D58F56E5977CBA17B5DDC46EAE9A464E20276DFEC166B08B402B451AD8D5DBC9AAD116A2D64D56E5C94544E81B78F667F11E57F216662345CCB6CA',
+    
+    'charge_api' => [
+        'base_url_api' => 'http://tga.refahbon.com/dev/api/tls/charge/other',
+        'url_refresh_token' =>'http://api.satpay.ir/satapi/v1/refreshKey',
+        'api_key' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJSb2xlcyI6WzEsMiwzXSwidXNlckRhdGEiOiJtaXJuZXphbSIsInVzZXJJZCI6IjYxNjQxY2Y0OTljNWE5MDQ4YmY5OTNkYiIsImNpZCI6IjIwMDc5IiwiaWF0IjoxNjMzOTUwOTY1LCJleHAiOjE2MzQ4MTQ5NjV9.FrlCv2HXmNUL6RbhxmTHSEDnJYLzTbho4vQUa5YqXpQ',
+        'secret_key' =>'1e854c3a-119b-4147-8e5f-5dd3d450ecab',
+        'user_token' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aXNpdG9ySWQiOjQsInJlc2VsbGVySWQiOjEsImNsdWJJZCI6MSwidXNlcklkIjoiMjAwNzkiLCJicmFuY2hDb2RlIjowLCJtb2JpbGUiOiI5MTIwNTEwNDQyIiwicm9sZSI6IjEiLCJjb21wYW55SUQiOiIwIiwib3JnSUQiOiIiLCJ1c2VybmFtZSI6Im1pcm5lemFtIiwiSXNQaXNoa2hhbiI6MCwiaWF0IjoxNjMzOTUwOTM4LCJleHAiOjE2MzM5NTE4Mzh9.JOv7hrexgmiQbOugSlGhnaGj9qVyUkmUOruruDxEQrA',
+    ],
 
     /*
     |--------------------------------------------------------------------------
