@@ -13,8 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','MainController@index');
+Route::view('/', 'index');
 
 Route::post('/payment/create', 'PaymentController@paymentRequest');
 Route::post('/callback', 'PaymentController@callback')->name('callback');
-// Route::post('/payment/verify', 'PaymentController@paymentVerify');

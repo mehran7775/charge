@@ -1,4 +1,4 @@
-<?php
+@php
 $config = [
     'title' => 'فروشگاه شارژ و خدمات پی استار ',
     'description' => 'خرید شارژ تلفن همراه',
@@ -7,7 +7,8 @@ $config = [
 ];
 $slashPos = strrpos($_SERVER['SCRIPT_NAME'], '/');
 $root = 'http://' . $_SERVER['SERVER_NAME'] . substr($_SERVER['SCRIPT_NAME'], 0, $slashPos);
-?>
+@endphp
+
 <!DOCTYPE html>
 <html>
 
